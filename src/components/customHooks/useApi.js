@@ -8,11 +8,6 @@ const useApi = (url) => {
 
   const loadData = ()=>{
     axios.get(url)
-    // fetch(url)
-    // .then(res=>{
-    //     console.log("HELLO")
-    //     return res.json();
-    // })
     .then(resData=>{
         setLoading(false);
         setData(resData.data);
